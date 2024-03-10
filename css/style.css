@@ -1,0 +1,257 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(249, 216, 167);
+}
+/*section1*/
+#header{
+    width: 100%;
+    height: 100%;
+  }
+.contaner{
+    padding: 8px 8%;
+  }
+#nav{
+    display: flex;
+    position: fixed;
+    padding-inline: 20px;
+  }
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+     background-color: #835151;
+    width: 100%;
+  }
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 12px 24px;
+    border-radius: 2px;
+  }
+nav ul li a.active2{
+    background-color: rgb(118, 99, 51);
+    border-radius: 2px;
+  }
+  nav ul li a.active{
+    background-color: rgb(118, 99, 51);
+    border-radius: 2px;
+  }
+nav ul li a{
+    color: rgb(221, 147, 77);
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    
+  }
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 8px;
+    background: goldenrod;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  
+  }
+nav ul li a:hover::after{
+    width: 100%;
+  }
+.header-2{
+    margin-top: 25%;
+    margin-bottom: 25%;
+    font-size: 35px;
+  }
+.header-2 span{
+    color: rgb(214, 136, 10);
+}
+
+.header-2 h3, h1{
+    color: #835151;
+}
+
+/*section2*/
+#about
+{
+ background-color: rgb(206, 149, 70) ;
+ padding: 100px 0;
+ color: whitesmoke;
+}
+.about-2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 90px;
+  }
+
+img{
+    display: block;
+    height: 300px;
+    border-radius: 4px;
+    justify-content: center;
+    float: right;
+  }
+.avtar img {
+    width: 100%;
+
+  }
+#info{
+    display: block;
+    max-width: max-content;
+    float: left;
+  }
+p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+/*section3*/
+#skills{
+  background-color: rgb(211, 175, 132);
+  padding: 100px 0;
+  padding-top: 90px;
+}
+
+.sk{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 90px;
+}
+#post-1{
+  background-color:rgb(130, 99, 64);
+  padding: 20px;
+  margin: auto;
+  border-radius: 50px;
+}
+#post-1:hover{
+  background-color: #914343;
+  border-style: groove;
+  transform: translateX(-5px);
+}
+#p-2{
+  color: #cbbdbd;
+  text-align: center;
+}
+#list{
+  color: #caacac;
+  text-align: center;
+}
+
+
+/*section4*/
+#contact{
+ background-color: rgb(206, 149, 70) ;
+ padding: 100px 0;
+ color: whitesmoke;
+ padding-top: 90px;
+
+}
+.sections{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 90px;
+}
+.right-side{
+  flex-basis: 40%;
+}
+.info{
+  margin-top: 25px;
+}
+.right-side h1{
+  color: rgb(10, 120, 39);
+
+}
+
+.left-side{
+  flex-basis: 55%;
+}
+
+.feedback h1{
+  color:rgb(10, 120, 39);
+
+}
+.feedback form{
+ width: 100%;
+}
+form input, form textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 7px;
+  border: 0;
+  outline: none;
+
+}
+.Send{
+  width: 30%;
+  height: 30px; 
+  margin-left: 30%;
+  border-radius: 7px;
+  border: 0;
+  outline: none;
+  transition: 0.5s;
+}
+.Send:hover{
+  color: white;
+  background-color: rgb(58, 44, 9);
+  transform: translateY(-3px);
+}
+
+
+
+#back-to-top{
+    position: fixed;
+    width: 100px;
+    height:50px;
+    bottom:15px;
+    right: 15px;
+    background-color: rgb(39, 154, 116);
+    border-radius: 4px;
+    border-color:bisque;
+    border-style: double;
+    color: bisque;
+    
+}
+#back-to-top:hover{
+  color: #cbbdbd;
+  background-color: rgb(77, 70, 62);
+  transform: translateY(4px);
+  height: 100px;
+  width: 150px;
+}
+
+.footer{
+  background-color: #835151;
+  padding: 10px;
+  color: aliceblue;
+  text-align: center;
+}
+/*-------- @media ------*/
+@media only screen and (max-width:670px) {
+  
+    
+  section{
+    width: 100%;
+    
+  }
+
+  .avtar{
+  justify-content:space-around;
+  }
+ 
+  .avatar, .info, .left-side, .right-side{
+    flex-basis: 100%;
+  }
+  .right-side{
+    margin-top: 20px;
+  }
+}
+
+
